@@ -28,14 +28,14 @@ module output
     subroutine init
       implicit none
 
-      open(unit=1, file=x_out)
-      open(unit=2, file=k_out)
-      open(unit=3, file=t_out)
-      open(unit=4, file=psi0_out)
-      open(unit=5, file=psik_out)
-      open(unit=6, file=ak_out)
-      open(unit=7, file=ek_out)
-      open(unit=8, file=psit_out)
+      open(unit=1, file=trim(output_dir)//trim(x_out))
+      open(unit=2, file=trim(output_dir)//trim(k_out))
+      open(unit=3, file=trim(output_dir)//trim(t_out))
+      open(unit=4, file=trim(output_dir)//trim(psi0_out))
+      open(unit=5, file=trim(output_dir)//trim(psik_out))
+      open(unit=6, file=trim(output_dir)//trim(ak_out))
+      open(unit=7, file=trim(output_dir)//trim(ek_out))
+      open(unit=8, file=trim(output_dir)//trim(psit_out))
     end subroutine init
 
     subroutine write_grid

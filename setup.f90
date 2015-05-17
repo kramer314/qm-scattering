@@ -7,6 +7,7 @@ module setup
   use progvars
   use params, only: assign_params, psi0, psik, ek
   use numerics, only: linspace
+  use files, only: ensure_dir
 
   implicit none
 
@@ -20,6 +21,7 @@ module setup
       implicit none
 
       call assign_params
+      call ensure_dir(output_dir)
       call allocate_arrays
       call init_grids
       call init_psi

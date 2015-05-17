@@ -15,7 +15,7 @@ module progvars
   complex(dp), parameter :: j = (0.0_dp, 1.0_dp)
 
   ! Output parameters
-  character(120) :: output_folder
+  character(120) :: output_dir
   character(120) :: ak_out, ek_out, psit_out, psi0_out, psik_out
   character(120) :: x_out, k_out, t_out
   

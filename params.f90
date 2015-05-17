@@ -25,6 +25,7 @@ module params
       implicit none
 
       ! Assign output parameters
+      output_dir = "./output/"
       ak_out = "ak.dat"
       ek_out = "ek.dat"
       psit_out = "psit.dat"
