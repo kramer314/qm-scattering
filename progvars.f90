@@ -18,6 +18,8 @@ module progvars
   character(120) :: output_dir
   character(120) :: ak_out, ek_out, psit_out, psi0_out, psik_out
   character(120) :: x_out, k_out, t_out
+  logical :: output_grid, output_psi0, output_psik, output_ak
+  logical :: output_ek, output_psixt
   
   ! Grid parameters
   integer(8) :: n_x, n_k, n_t
@@ -26,6 +28,7 @@ module progvars
   ! Work arrays
   real(dp), allocatable :: x_range(:), k_range(:), t_range(:)
   real(dp), allocatable :: ek_arr(:)
-  complex(dp), allocatable :: ak_arr(:), psik_arr(:,:), psi0_arr(:), psixt_arr(:,:)
+  complex(dp), allocatable :: ak_arr(:), psi0_arr(:)
+  complex(dp), allocatable :: psik_arr(:,:), psixt_arr(:,:)
 
 end module progvars

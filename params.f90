@@ -35,6 +35,13 @@ module params
       k_out = "k_range.dat"
       t_out = "t_range.dat"
 
+      output_grid = .False.
+      output_psi0 = .True.
+      output_psik = .False.
+      output_ak = .True.
+      output_ek = .False.
+      output_psixt = .True.
+
       ! Assign potential parameters
       gamma = 20.0_dp
       a = 1.0_dp
