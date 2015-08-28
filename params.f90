@@ -60,7 +60,7 @@ module params
       ! Assign grid and propagation parameters
       x_min = 0.0_dp
       x_max = x_0 + x_stdev * d_x
-      n_x = 1e2
+      n_x = 5e2
 
       k_min = k_0 - k_stdev * d_k
       k_max = k_0 + k_stdev * d_k
@@ -68,7 +68,7 @@ module params
 
       t_min = 0.0_dp
       t_max = 5.0_dp
-      n_t = 1e2
+      n_t = 5e2
 
     end subroutine assign_params
 
